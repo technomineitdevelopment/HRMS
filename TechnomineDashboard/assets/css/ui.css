@@ -1,0 +1,111 @@
+.leave-card {
+    position: relative;
+    display: grid;
+    min-height: 300px;
+    background: white;
+    padding: 20px;
+    box-shadow: 0 7px 25px rgba(187, 183, 183, 0.08);
+    border-radius: 20px;
+}
+.leave-card h2 {
+    background-color: #ED1E24;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    margin: 0;
+    font-size: 22px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.leave-card .inner-container {
+    display: flex;
+    width: 100%;
+}
+
+.leave-card .statChartHolder,
+.leave-card .statRightHolder {
+    flex: 1;
+    max-height: 300px; 
+    overflow-y: auto;
+    box-sizing: border-box;
+}
+
+.leave-card .statChartHolder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 1px solid #ccc;
+    padding-right: 10px;
+}
+
+.leave-card #chartCanvas {
+    width: 80%; 
+    height: 80%; 
+    max-width: 50%; 
+    max-height: 100%; 
+}
+
+
+.leave-card .statRightHolder {
+    padding-left: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.leave-card .statRightHolder ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.leave-card .statRightHolder li {
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.leave-card .statRightHolder h3 {
+    color: #333;
+    font-weight: 700;
+    font-size: 24px;
+    margin: 0;
+    margin-bottom: 5px; 
+}
+
+.leave-card .statRightHolder span {
+    color: #777;
+    font-size: 14px;
+}
+
+
+.leave-card .bottom-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.leave-card .link {
+    text-decoration: none;
+    margin: 10px;
+    padding: 8px;
+    background-color: #3498db;
+    color: #fff;
+    border: 1px solid #3498db;
+    border-radius: 4px;
+    font-size: 12px;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+.leave-card .link i {
+    margin-right: 5px;
+}
+
+.leave-card .link:hover {
+    background-color: #2980b9;
+    border: 1px solid #2980b9;
+}
