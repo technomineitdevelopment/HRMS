@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technomine Admin Dashboard </title>
+    <!-- ======= Styles ====== -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/card.css">
+    <!-- <link rel="stylesheet" href="./assets/css/ui.css"> -->
+    <!-- <link rel="stylesheet" href="./assets/css/food.css"> -->
+    <link rel="stylesheet" href="./assets/css/query.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/brands.min.css"
+        integrity="sha512-W/zrbCncQnky/EzL+/AYwTtosvrM+YG/V6piQLSe2HuKS6cmbw89kjYkp3tWFn1dkWV7L1ruvJyKbLz73Vlgfg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+    <!-- =============== Navigation ================ -->
+    <div class="container">
+        <div class="navigation">
+            <ul>
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                            <!-- <ion-icon name="logo-apple"></ion-icon> -->
+                            <img src="./assets/imgs/Layer 1.png" alt="Technomine Logo">
+                        </span>
+                        <span class="title">Technomine</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="home-outline"></ion-icon>
+                        </span>
+                        <span class="title">Home</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="person-outline"></ion-icon>
+                        </span>
+                        <span class="title">Me</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="file-tray-outline"></ion-icon>
+                        </span>
+                        <span class="title">Inbox</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="people-outline"></ion-icon>
+                        </span>
+                        <span class="title">My Team</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="wallet-outline"></ion-icon>
+                        </span>
+                        <span class="title">My Finance</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="business-outline"></ion-icon>
+                        </span>
+                        <span class="title">Organisation</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="log-out-outline"></ion-icon>
+                        </span>
+                        <span class="title">Sign Out</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- ========================= Main ==================== -->
+        <div class="main">
+            <div class="topbar">
+                <div class="toggle">
+                    <ion-icon name="menu-outline"></ion-icon>
+                </div>
+
+                <div class="search">
+                    <label>
+                        <input type="text" placeholder="Search here">
+                        <ion-icon name="search-outline"></ion-icon>
+                    </label>
+                </div>
+
+                <div class="user">
+                    <img src="assets/imgs/customer01.jpg" alt="">
+                </div>
+            </div>
+
+            <!-- ======================= Cards ================== -->
+            <div class="dashboard-container">
+                <div class="widget-card">
+                    <div class="card-header">
+                        <i class="fas fa-user-clock"></i>
+                        <h2>Attendance</h2>
+                    </div>
+                    <div class="card-content">
+                        <p>Employee In Time: 9:00 AM</p>
+                        <p>Employee Out Time: 5:00 PM</p>
+                        <p>Status: On Time</p>
+                        <a href="attendance-page.html">View Attendance</a>
+                    </div>
+                </div>
+            
+                <!-- Birthday Card -->
+                <div class="widget-card birthday-card">
+                    <div class="card-header">
+                        <i class="fas fa-birthday-cake"></i>
+                        <h2>Birthday</h2>
+                    </div>
+                    <div class="card-content">
+                        <!-- Added nearby users -->
+                        <div class="nearby-user">
+                            <img src="https://bootdey.com/img/Content/avatar/avatar7.png" alt="Employee Photo">
+                            <div class="user-info">
+                                <h5>Samir Panchal</h5>
+                                <p>SDE</p>
+                            </div>
+                            <button class="btn btn-primary pull-right">Wish</button>
+                        </div>
+                        <div class="nearby-user">
+                            <img src="https://bootdey.com/img/Content/avatar/avatar6.png" alt="Employee Photo">
+                            <div class="user-info">
+                                <h5>Parth Patel</h5>
+                                <p>SEO</p>
+                            </div>
+                            <button class="btn btn-primary pull-right">Wish</button>
+                        </div>
+                        <!-- End of nearby users -->
+                    </div>
+                </div>
+        
+                <!-- Work Anniversary Card -->
+                <div class="widget-card work-anniversary-card">
+                    <div class="card-header">
+                        <i class="fas fa-trophy"></i>
+                        <h2>Anniversary</h2>
+                    </div>
+                    <div class="card-content nearby-users">
+                        <!-- Work anniversary nearby users -->
+                        <div class="nearby-user">
+                            <img src="https://bootdey.com/img/Content/avatar/avatar7.png" alt="Employee Photo">
+                            <div class="user-info">
+                                <h5>Samir Panchal</h5>
+                                <p>SDE</p>
+                            </div>
+                            <button class="btn btn-primary pull-right">Wish</button>
+                        </div>
+                        <div class="nearby-user">
+                            <img src="https://bootdey.com/img/Content/avatar/avatar6.png" alt="Employee Photo">
+                            <div class="user-info">
+                                <h5>Parth Patel</h5>
+                                <p>SEO</p>
+                            </div>
+                            <button class="btn btn-primary pull-right">Wish</button>
+                        </div>
+                        <!-- Add more work anniversary nearby users as needed -->
+                    </div>
+                </div>
+        
+        
+                <!-- Announcement Card -->
+                <div class="widget-card announcement-card">
+                    <div class="card-header">
+                        <i class="fas fa-bullhorn"></i>
+                        <h2>Announcements</h2>
+                    </div>
+                    <div class="card-content">
+                        <ul class="announcement-list">
+                            <li>Important announcement 1</li>
+                            <li>Important announcement 2</li>
+                            <li>Important announcement 3</li>
+                            <!-- Add more announcements as needed -->
+                        </ul>
+                        <button class="view-all-button">View All</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ================ Order Details List ================= -->
+
+            <div class="chartsBx">
+                <div class="chart">
+                    <canvas id="chart-1"></canvas>
+                    <div class="bottom-links">
+                        <a href="#" class="link"><i class="fas fa-plus"></i><span>Request Leave</span></a>
+                        <a href="#" class="link"><i class="fas fa-list"></i><span>View All</span></a>
+                    </div>
+                </div>
+                <div class="chart"> 
+                    <!-- <canvas id="chart-2"></canvas>  -->
+                    <div class="food-card">
+                        <div class="main-heading">
+                            <h2>My Food</h2>
+                          </div>
+                      
+                          <div class="sections-container">
+                            <div class="section1">
+                              <div class="food-card-heading">
+                                <h3>Book Coupon </h3>
+                              </div>
+                              <div class="menu-buttons">
+                                <div class="menu-button" onclick="raiseCoupon('Dinner')">Dinner</div>
+                                <div class="menu-button" onclick="raiseCoupon('Lunch')">Lunch</div>
+                                <div class="menu-button" onclick="raiseCoupon('No Coupon')">No Coupon</div>
+                              </div>
+                            </div>
+                      
+                            <div class="section2">
+                              <div class="food-card-heading">
+                                <h3>Today's Menu</h3>
+                              </div>
+                              <ul class="menu-list">
+                                <li class="menu-item">1. Spaghetti Bolognese</li>
+                                <li class="menu-item">2. Caesar Salad</li>
+                                <li class="menu-item">3. Chocolate Cake</li>
+                              </ul>
+                            </div>
+                          </div>
+                    </div>
+
+                    <!-- Query  -->
+                    <div class="service-widget-card">
+                        <div class="nav-section">
+                            <h2>Service Tickets</h2>
+                        </div>
+                
+                        <div class="circle-cards-container">
+                            <div class="circle-card">
+                                <div class="circle-number">
+                                    <h3>10</h3>
+                                </div>
+                                <div class="circle-content">
+                                    <p>Solved Tickets</p>
+                                </div>
+                            </div>
+                            <div class="circle-card">
+                                <div class="circle-number">
+                                    <h3>5</h3>
+                                </div>
+                                <div class="circle-content">
+                                    <p>Raised Tickets</p>
+                                </div>
+                            </div>
+                            <div class="circle-card">
+                                <div class="circle-number">
+                                    <h3>15</h3>
+                                </div>
+                                <div class="circle-content">
+                                    <p>Total Tickets</p>
+                                </div>
+                            </div>
+                        </div>
+                
+                        <button class="create-ticket-button">Create Ticket</button>
+                    </div>
+
+                    
+                </div>
+            </div>              
+            
+        </div>
+    </div>
+
+    <!-- =========== Scripts =========  -->
+    <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/chartsJS.js"></script>
+    <script>
+        function raiseCoupon(menuType) {
+          alert(`Coupon raised for ${menuType}`);
+        }
+      </script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.1/dist/chart.min.js"></script>
+    <script src="assets/js/chartsJS.js"></script>
+
+    <!-- ====== ionicons ======= -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
+    <!-- <script src="./assets/js/ui.js"></script> -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
