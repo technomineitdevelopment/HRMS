@@ -1,0 +1,185 @@
+/* =========== Google Fonts ============ */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;900&display=swap');
+
+/* =============== Globals ============== */
+html,
+body {
+    font-family: "Roboto";
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Rest of your CSS remains unchanged */
+.dashboard-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    margin-top: 20px;
+    gap: 10px;
+}
+
+.widget-card {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    /* overflow: hidden; */
+    font-family: "Roboto";
+    width: 250px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* card-header */
+
+.card-header {
+    background-color: #ED1E24;
+    border-top-right-radius:4px ;
+    border-top-left-radius:4px ;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+.card-header i {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+.card-header h2 {
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.card-content {
+    padding: 10px 20px;
+}
+
+.card-content p {
+    font-size: 14px;
+    margin: 0 0 10px;
+}
+
+.attendance .btn{
+    margin-top: 25px;
+}
+.card-content a {
+    border-radius: 4px;
+    text-decoration: none;
+    margin: 0;
+    padding: 9px;
+    background-color: #848585;
+    color: #fff;
+    border: 1px solid #848585;
+    border-radius: 4px;
+    font-size: 12px;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+.card-content a:hover {
+    background-color: #848585;
+    border: 1px solid #848585;
+}
+
+
+
+/* Birthday */
+.birthday-card .nearby-users {
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.nearby-user {
+    border-bottom: 1px solid #ddd;
+    margin-top: 1px;
+    padding: 7px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nearby-user:first-child{
+    padding-top: 0px;
+}
+
+.nearby-user img {
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    margin-right: 10px;
+}
+
+.user-info {
+    flex-grow: 1;
+}
+
+.nearby-user h5 {
+    margin: 0;
+    font-size: 14px;
+    font-family: "Roboto";
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.nearby-user p {
+    margin: 3px 0;
+    font-size: 12px;
+}
+
+.nearby-user button {
+    background-color: #848585;
+    color: #fff;
+    padding: 3px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.nearby-user button:hover {
+    background-color: #848585;
+}
+
+.work-anniversary-card {
+    background-color: white;
+    color: black;
+}
+
+.work-anniversary-card .nearby-user button {
+    background-color: #848585;
+}
+
+.announcement-card {
+    background-color: white;
+    color: black;
+}
+
+.announcement-card .announcement-list {
+    list-style-type: disc;
+    padding: 2px;
+}
+
+.announcement-card .announcement-list li {
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.announcement-card .view-all-button {
+    text-decoration: none;
+    margin: 0;
+    padding: 9px;
+    background-color: #848585;
+    color: #fff;
+    border: 1px solid #848585;
+    border-radius: 4px;
+    font-size: 12px;
+    text-align: center;
+    transition: background-color 0.3s;
+    cursor: pointer;
+
+}
+
+.announcement-card .view-all-button:hover {
+    background-color: #848585;
+}
